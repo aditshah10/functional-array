@@ -1,10 +1,10 @@
 const Animals = [    
-	{name: “Fluffykins” , species: “rabbit” },
-	{name: “Caro” , species: “dog” },
-	{name: “Hamilton” , species: “dog”},
-	{name: “Harold”, species: “fish”},
-	{name: “Ursula” , species: “cat”},
-	{name: “Jimmy”, species: “fish”}
+	{name: "Fluffykins" , species: "rabbit" },
+	{name: "Caro" , species: "dog" },
+	{name: "Hamilton" , species: "dog"},
+	{name: "Harold", species: "fish"},
+	{name: "Ursula" , species: "cat"},
+	{name: "Jimmy", species: "fish"}
 ];
 
 
@@ -18,3 +18,10 @@ const animalsFilter = function (arr) {
 
 const dogs = animalsFilter(Animals);
 console.log(dogs);
+
+
+const doggys = Animals.filter(function(dog){
+                                return Animals.species == "dog"
+})
+
+console.log(doggys)
