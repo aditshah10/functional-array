@@ -19,3 +19,6 @@ const names = function(arr) {
 
 const namesAnimals = names(Animals)
 console.log(namesAnimals)
+
+const namesOfAnimals = Animals.map(x => x.name)
+console.log(namesOfAnimals);
