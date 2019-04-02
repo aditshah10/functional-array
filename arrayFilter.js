@@ -9,10 +9,12 @@ const Animals = [
 
 
 const animalsFilter = function (arr) {
+    var x 
     for(let i=0; i < arr.length; i++) {
-        if (arr[i].species === "dog"){
-            return arr[i].name;
+        if (arr[i].species == "dog"){
+            return arr[i].name
         }
+        
     }
 };
 
@@ -21,7 +23,7 @@ console.log(dogs);
 
 
 const doggys = Animals.filter(function(dog){
-                                return Animals.species == "dog"
+                                return dog.species == "dog"
 })
 
 console.log(doggys)
